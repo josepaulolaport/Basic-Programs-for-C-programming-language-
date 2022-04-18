@@ -48,17 +48,6 @@ float pilha_pop (Pilha* p){
   return v;
 }
 
-void pilha_libera (Pilha* p) {
-  // erro: free(): invalid pointer
-  // signal: aborted (core dumped)
-  //Nao consegui dar free, qual seria a forma correta?
-  // int i;
-  // for(i=0; i < p->topo-1; i++){
-  //   if(&p->vet[i]!=NULL){
-  //     free(&p->vet[);
-  //   }
-  // }
-  
   free(p);
 }
 
