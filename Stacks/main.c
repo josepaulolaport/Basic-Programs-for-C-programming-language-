@@ -3,9 +3,9 @@
 #define MAX 50 
 
 struct pilha {
-int topo; /* vet[topo]: primeira posição livre do vetor */
-int vet[MAX]; /* vet[topo-1]: topo da pilha */
-/* vet[0] a vet[N-1]: posições ocupáveis */
+int topo;
+int vet[MAX]; 
+
 };typedef struct pilha Pilha ;
 
 Pilha* pilha_cria (){
@@ -14,7 +14,7 @@ Pilha* pilha_cria (){
     exit (1);
   }
   
-  p->topo = 0; /* inicializa com zero elementos */
+  p->topo = 0; 
   return p;
 }
 
@@ -140,10 +140,4 @@ int main(void) {
   mostrarPinos(pino1,pino2,pino3);
   mover(pino2,pino3);
   mostrarPinos(pino1,pino2,pino3);
-
-  terminar(pino1,pino2,pino3);
-  
-
-  
-
 }
